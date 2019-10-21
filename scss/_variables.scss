@@ -1,0 +1,148 @@
+/* colors */
+
+
+/* Blue Color */
+
+$primary-blue: #0071FF;
+$secondary-blue: #00ABFF;
+$tritary-blue: #01C9FF;
+
+/* Red Color */
+
+$primary-red: #EE3806;
+
+/* Orange Color */
+
+$primary-orange: #FF7C00;
+$secondary-orange: #FF9200;
+
+/* Grey Color */
+
+$primary-grey: #333333;
+$secondary-grey: #666666;
+$tritary-grey: #CCCCCC;
+
+/* Menu Color */
+
+$primary-menu:#F5FAFD;
+
+/* Background Color */
+
+$grey-background: #F2F2F2;
+$blue-background: #F2F7FA;
+
+/* Header */
+
+$banner-text: #004EA3;
+$header-heading-font-size:2.2rem;
+
+/* font-family */
+
+* {
+    font-family: 'Muli', sans-serif;
+}
+
+
+/* responsive media query breakpoints */
+
+@mixin breakpoint($class) {
+    @if $class==xs {
+        @media (max-width: 575.98px) {
+            @content;
+        }
+    }
+    @else if $class==sm {
+        @media (max-width: 767.98px) {
+            @content;
+        }
+    }
+    @else if $class==md {
+        @media (max-width: 991.98px) {
+            @content;
+        }
+    }
+    @else if $class==lg {
+        @media (max-width: 1199.98px) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+@mixin cta-button-color($bg, $cl, $if-bk:false) {
+    border: 2px solid $bg;
+    color: $cl;
+    @if $if-bk {
+        background-color: $bg
+    }
+}
+
+@mixin card-box() {
+    padding: 2rem;
+    box-shadow: 0px 3px 30px $grey-background;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cta-button {
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 20px;
+}
+
+section {
+    margin-top: 5rem;
+    @include breakpoint(xs) {
+        margin-top: 3rem;
+    }
+}
+
+section.process {
+    margin-top: 8rem;
+    overflow: hidden;
+    @include breakpoint(xs) {
+        margin-top: 3rem;
+    }
+}
+
+.section-heading {
+    h2 {
+        display: flex;
+        flex-direction: column;
+        color: $banner-text;
+        font-size: 26px;
+        text-transform: capitalize;
+        font-weight: bold;
+        &:after {
+            content: '';
+            width: 45px;
+            border-bottom: 3px solid $primary-orange;
+            margin-top: 14px;
+        }
+    }
+}
+
+.navi-btn-custm {
+    position: absolute;
+    top: 40%;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    &.prev {
+        left: -2%;
+    }
+    &.nxt {
+        right: -2%;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
