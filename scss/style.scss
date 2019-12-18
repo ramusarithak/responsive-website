@@ -1,3 +1,5 @@
+
+    
     @import './variables';
     $word-spacing:25px;
      ::selection {
@@ -110,9 +112,15 @@
                     margin-bottom: 10%;
                 }
             }
+            .card{
+                background: whitesmoke;
+                width: 17rem;
+                border-radius: 10%;
+                text-align: center;
+            }
             .card-body {
-                width: 19rem;
-                width: 22rem;
+                // width: 19rem;
+                width: 18rem;
                 border-radius: $total-card;
                 h5 {
                     display: flex;
@@ -138,10 +146,11 @@
             margin-right: 0%;
             border: none;
             .col-md-3 {
+                
                 // margin-left: 12%;
                 .card-body {
                     width: 80%;
-                    border: 1px solid rgba(0, 0, 0, .125);
+                    // border: 1px solid rgba(0, 0, 0, .125);
                 }
             }
         }
@@ -152,12 +161,15 @@
             width: 57%;
         }
         .sc {
+            
             margin-top: -10%;
             // margin-bottom: 6%;
             @include breakpoint(xs) {
                 margin-left: -27%;
                 .two-card {
                     margin-left: 59px;
+                    background-color:#f7f6f4;
+
                 }
             }
         }
@@ -172,4 +184,62 @@
                 margin-left: 30%;
             }
         }
+    }
+    .ban1{
+        margin-top: 9rem;
+       .hea{
+           display: flex;
+           justify-content: center;
+           .optimize1{
+            font-weight: 800;
+               color: #424c6d;
+               font-size: 53px;
+               display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-left: 23%;
+               
+           }
+           .optimize2{
+            font-weight: 800;
+            color: #424c6d;
+
+            font-size: 53px;
+            margin-left: -40%;
+    margin-right: auto;
+    margin-top: 4%;
+        }
+       } 
+    }
+    .tworow{
+        .row{
+            .col-md-4{
+                display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+    img{
+        width: 30%;
+       
+       span{
+           display: flex;
+           flex-direction: column;
+           
+        .dig1{
+            color: #8e96de;
+            display: flex;
+    flex-direction: column;
+        }
+    }
+    }
+    
+            }
+            .col-md-8{
+                display: flex;
+    align-items: center;
+    margin-right: auto;
+    left: 4%;
+            }
+
+        }
+
     }
