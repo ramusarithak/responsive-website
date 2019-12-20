@@ -146,11 +146,10 @@
             margin-right: 0%;
             border: none;
             .col-md-3 {
-                
                 // margin-left: 12%;
                 .card-body {
                     width: 80%;
-                    // border: 1px solid rgba(0, 0, 0, .125);
+                // border: 1px solid rgba(0, 0, 0, .125);
                 }
             }
         }
@@ -182,6 +181,19 @@
             }
             p {
                 margin-left: 30%;
+            }
+            .container{
+                border-radius: 6%;
+                background-color: brown;
+                width: 57%;
+                margin: 10% 0% 0% 30%;
+                top: 0px;
+                bottom: 0px;
+                /* display: flex; */
+                text-align: center;
+                .carousel-inner {
+                    border-radius: 30%;
+                }
             }
         }
     }
@@ -242,7 +254,7 @@
     .onImg{
 background-color: #fec430;
 margin-top: 20%;
-
+height: 500px;
         .cat{
             .ftimg{
                 margin-top: -23%;
@@ -255,15 +267,22 @@ margin-top: 20%;
             .card{
                 width: 75%;
                 border-radius: 24px;
-                .card.toys{
-                   width: 15%;
-                   margin-top: 0px;
-               }
+                .by {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background: rebeccapurple;
+                    height: 400px;
+                    margin-top: -26%;
+                    font-size: 19px;
+                }
+                
             }
         }
     }
    .ctn{
-    padding-bottom: 5%;
+    padding-bottom: 7%;
     border-bottom: 2px solid #f4f6f6;
 
     .container{
@@ -284,3 +303,35 @@ margin-top: 20%;
 }
 }
 // footer
+.footer{
+
+    .row{
+        h3{
+            font-size: 21px;
+
+        }
+        .col-md-4{
+            margin-top: -39px;
+            img{
+                width: 50%;
+    padding: 32px;
+    /* height: 30%; */
+    border-radius: 59%;
+            }
+           .hhe{
+            display: flex;
+            justify-content: center;
+            margin-top: -77px;
+            padding: 0px 0px 0px 12%;
+           } 
+           .col-md-1{
+              
+           
+                .u-a{
+               width: 100%;
+               
+            }
+           }
+        }
+        }
+    }

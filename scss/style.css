@@ -302,6 +302,21 @@ section.process {
   margin-left: 30%;
 }
 
+.card .col-md-6 .container {
+  border-radius: 6%;
+  background-color: brown;
+  width: 57%;
+  margin: 10% 0% 0% 30%;
+  top: 0px;
+  bottom: 0px;
+  /* display: flex; */
+  text-align: center;
+}
+
+.card .col-md-6 .container .carousel-inner {
+  border-radius: 30%;
+}
+
 .ban1 {
   margin-top: 9rem;
 }
@@ -387,6 +402,7 @@ section.process {
 .onImg {
   background-color: #fec430;
   margin-top: 20%;
+  height: 500px;
 }
 
 .onImg .cat .ftimg {
@@ -407,13 +423,28 @@ section.process {
   border-radius: 24px;
 }
 
-.onImg .tos .card .card.toys {
-  width: 15%;
-  margin-top: 0px;
+.onImg .tos .card .by {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rebeccapurple;
+  height: 400px;
+  margin-top: -26%;
+  font-size: 19px;
 }
 
 .ctn {
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   border-bottom: 2px solid #f4f6f6;
 }
 
@@ -434,5 +465,35 @@ section.process {
 
 .ctn .container .r {
   margin-top: 7%;
+}
+
+.footer .row h3 {
+  font-size: 21px;
+}
+
+.footer .row .col-md-4 {
+  margin-top: -39px;
+}
+
+.footer .row .col-md-4 img {
+  width: 50%;
+  padding: 32px;
+  /* height: 30%; */
+  border-radius: 59%;
+}
+
+.footer .row .col-md-4 .hhe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -77px;
+  padding: 0px 0px 0px 12%;
+}
+
+.footer .row .col-md-4 .col-md-1 .u-a {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
