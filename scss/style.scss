@@ -1,5 +1,7 @@
 
-    
+    html {
+        scroll-behavior: smooth;
+       }
     @import './variables';
     $word-spacing:25px;
      ::selection {
@@ -8,6 +10,16 @@
     
      ::before section {
         color: rgb(214, 75, 75);
+    }
+    
+    .loader {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('../img/loader.gif') 50% 50% no-repeat rgb(249,249,249);
     }
     
     .navbar {
@@ -83,11 +95,8 @@
     //     position: absolute;
     // }
     .card {
-        @include breakpoint(xs){
-            .clip{
-                width: opx;
-            }
-        }
+        
+        
         .clip {
             clip-path: polygon(19% 29%, 100% 0, 100% 100%, 19% 100%);
             background: #e1f1ff;
@@ -96,7 +105,25 @@
             margin-top: -35%;
             position: absolute;
             border-bottom-right-radius: 30%;
+
+            @include breakpoint(xs) {
+           
+                .clip{
+                    width: 100%;
+                    height: 105%;
+                    clip-path: polygon(19% 29%, 100% 0, 100% 100%, 19% 100%);
+        background: #e1f1ff;
+        width: 100%;
+        height: 105%;
+        margin-top: -35%;
+        position: absolute;
+        border-bottom-right-radius: 30%;
+                    // clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+                }
+            
         }
+        
+        
         // .card::before {
         //     clip-path: polygon(19% 29%, 100% 0, 100% 100%, 0% 100%);
         //     background: #f2a56d;
@@ -164,7 +191,8 @@
             color: #f2a56d;
         }
         img {
-            width: 57%;
+            margin-top: 3%;
+            width: 25%;
         }
         .sc {
             
@@ -190,10 +218,10 @@
                 margin-left: 30%;
             }
             .arrowiage{
-                margin-left: 30%;
+                margin-left: 28%;
     
     transform: rotate(45deg);
-    width: 50%;
+    width: 25%;
 }
             }
             .container{
@@ -286,11 +314,30 @@ height: 500px;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    background: rebeccapurple;
+                    background: #ffff;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                     height: 400px;
                     margin-top: -26%;
                     font-size: 19px;
                     border-radius: 50px;
+                    .card-subtitle{
+                        color: #424c6c;
+                        text-transform: initial;
+                        font-size: 35px;
+                        padding: 0px 0px;
+                        margin-bottom: 2%;
+                        
+
+                    }
+                    .btn-lg{
+                        background: #ff6c1e;
+                        text-transform:uppercase;
+                        padding: 9px 11px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+
+                                                }
                 }
                 
             }
@@ -313,7 +360,15 @@ height: 500px;
             }
             flex-wrap: nowrap;
             margin-left: 9%;
-            border: none;  
+            border: none; 
+            h5{
+                color: #56596d;
+                font-weight: bold;
+            } 
+            p{
+                
+                color: #888c9b;
+            }
         
     }
     .r{
@@ -331,6 +386,8 @@ height: 500px;
 
         }
         .col-md-4{
+            display: flex;
+            justify-content: center;
             margin-top: -39px;
             img{
                 width: 50%;
@@ -345,7 +402,10 @@ height: 500px;
             padding: 0px 0px 0px 12%;
            } 
            .col-md-1{
-              
+              .scroller{
+                  animation-delay: 2s;
+                scroll-margin-top:scroll;
+              }
            
                 .u-a{
                width: 50%;
@@ -353,5 +413,9 @@ height: 500px;
             }
            }
         }
+        .col-md-2{
+            color: #8a8ea1;
+        }
         }
     }
+    
