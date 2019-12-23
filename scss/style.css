@@ -188,14 +188,21 @@ section.process {
   border: none;
 }
 
+@media (max-width: 575.98px) {
+  .card .clip {
+    width: opx;
+  }
+}
+
 .card .clip {
   -webkit-clip-path: polygon(19% 29%, 100% 0, 100% 100%, 19% 100%);
           clip-path: polygon(19% 29%, 100% 0, 100% 100%, 19% 100%);
-  background: #f2a56d;
+  background: #e1f1ff;
   width: 100%;
   height: 145%;
   margin-top: -35%;
   position: absolute;
+  border-bottom-right-radius: 30%;
 }
 
 .card .row {
@@ -245,6 +252,7 @@ section.process {
   margin-left: 22px;
   height: 190px;
   width: 169px;
+  border-radius: 50%;
 }
 
 .card .row .card-body .card-text {
@@ -302,7 +310,14 @@ section.process {
   margin-left: 30%;
 }
 
-.card .col-md-6 .container {
+.card .col-md-6 .arrowiage {
+  margin-left: 30%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 50%;
+}
+
+.card .container {
   border-radius: 6%;
   background-color: brown;
   width: 57%;
@@ -313,7 +328,7 @@ section.process {
   text-align: center;
 }
 
-.card .col-md-6 .container .carousel-inner {
+.card .container .carousel-inner {
   border-radius: 30%;
 }
 
@@ -441,6 +456,7 @@ section.process {
   height: 400px;
   margin-top: -26%;
   font-size: 19px;
+  border-radius: 50px;
 }
 
 .ctn {
@@ -450,6 +466,14 @@ section.process {
 
 .ctn .container {
   margin-top: 15%;
+}
+
+@media (max-width: 575.98px) {
+  .ctn .container {
+    margin-top: 92%;
+    padding-left: -1%;
+    margin-left: -8%;
+  }
 }
 
 .ctn .container .row {
@@ -494,6 +518,6 @@ section.process {
 }
 
 .footer .row .col-md-4 .col-md-1 .u-a {
-  width: 100%;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
