@@ -388,19 +388,12 @@ section.process {
 }
 
 .tworow .row .col-md-4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   border-right: 1px solid black;
 }
 
 .tworow .row .col-md-4 img {
   width: 30%;
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -408,7 +401,7 @@ section.process {
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
+      -ms-flex-direction: column; */
           flex-direction: column;
 }
 
@@ -566,7 +559,36 @@ section.process {
           animation-delay: 2s;
   scroll-margin-top: scroll;
 }
+.col-md-1 {
+  display: block;
+  border-radius: 50%;
+  background: #ff8717;
+  cursor: pointer;
+  animation: none;
+    height: 59px;
+}
 
+.col-md-1:hover {
+  animation: pulse 5s infinite;
+}
+#vd{
+      padding: 29%;
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 30px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
 .footer .row .col-md-4 .col-md-1 .u-a {
   width: 50%;
 }
@@ -574,4 +596,35 @@ section.process {
 .footer .row .col-md-2 {
   color: #8a8ea1;
 }
+.im{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 600px) {
+   .col-md-2 {
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 25px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+   .col-md-4 {
+  border-right: none !important;
+  }
+  .col-md-8{
+  left:0 !important;
+  align-content: baseline;
+  }
+  .clip{
+        height: 110% !important; 
+
+  }
+  .hea h5{
+text-align: center !important;
+  }
+ 
+}
+
 /*# sourceMappingURL=style.css.map */
