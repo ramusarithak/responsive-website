@@ -367,7 +367,6 @@ section.process {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin-left: 23%;
 }
 
 .ban1 .hea .optimize2 {
@@ -377,6 +376,7 @@ section.process {
   margin-left: -40%;
   margin-right: auto;
   margin-top: 4%;
+  display: contents;
 }
 
 .tworow {
@@ -431,6 +431,7 @@ section.process {
 
 .onImg .cat .ftimg {
   margin-top: -23%;
+  width: 100%;
 }
 
 .onImg .tos {
