@@ -574,7 +574,11 @@ section.process {
 #vd{
       padding: 29%;
 }
-
+.nav-link:hover {
+  text-decoration: underline;
+  color: green
+}
+/* text underline */
 @keyframes pulse {
   0% {
     -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
